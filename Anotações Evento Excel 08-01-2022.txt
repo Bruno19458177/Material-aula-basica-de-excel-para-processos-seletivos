@@ -1,0 +1,139 @@
+--------------------------------------------------------------------------------------------------------------------------------
+Evento: Excel para Processos Seletivos
+Data: 08/01/2022
+Local: Ka Solution Ao Vivo Online
+Instrutor: Hélio de Almeida
+--------------------------------------------------------------------------------------------------------------------------------
+
+Referências de Células
+
+	> Relativa - Colunas e linhas são adaptadas ao copiar uma fórmula
+
+	EX: A1
+
+	> Absoluta - Colunas e linhas são fixadas e não alteram sua posição ao copiar uma fórmula
+
+	EX: $A$1
+
+	> Mista - Ou coluna ou linha é fixada e não altera sua posição ao copiar uma fórmula
+
+	EX: $A1 , A$1
+
+	(*) O caractere $ deverá estar à esquerda do que se deseja fixar
+
+	(*) A1$ - Referência inválida
+
+Intervalo Nomeado
+
+	Recurso que facilita na elaboração / compreensão de fórmulas, pois possui uma referência definida por um nome
+
+	Não poderá conter espaços em branco
+	Não poderá iniciar por número
+	Não poderá conter caracteres especiais !@#$%¨&*()+={[}]?/:;><,
+		Exceção: 
+			Ponto "."
+			Underline "_"
+
+Regra de Validação com listas
+
+	. Poderá ser digitada manualmente (Quando lista pequena)
+
+	. Poderá ser um intervalo de células
+
+(*) No caso de entradas de valores manuais na criação da lista, o MS-Excel fará distinção entre Maiúsculas e Minúsculas
+
+Funções de Resumo com Condicionais
+
+	SOMASES (SUMIFS)
+	MÉDIASES (AVERAGEIFS)
+	CONT.SES (COUNTIFS)
+
+	(*) Até 127 critérios
+
+
+Fórmulas com Referência 3D
+	
+	Recurso que permite cálculos com a utilização de células de outras planilhas
+	
+	NomePlanilha!Célula
+
+	'Nome da Planilha'!Célula (Nomes contendo espaços em branco)		
+
+
+Formatação Condicional
+
+	Modelos Pré-definidos
+	
+		. Realçar regras das células
+		. Regras de primeiros e últimos
+		. Barra de Dados
+		. Escala de Cores
+		. Conjunto de ícones
+
+PROCV (VLOOKUP)
+
+	PROCV(ValorProcurado;MatrizTabela;ÍndiceColuna;[Intervalo])
+
+	ValorProcurado: Número ou Texto a ser procurado
+
+	(*) Quando o valor não for encontrado será retornado um erro #N/D (pt-br) #N/A (en-us)
+
+	MatrizTabela: Tabela contendo os dados contendo a coluna do valor procurado e a coluna de retorno
+
+	ÍndiceColuna: Número que representa a posição da coluna desejada no retorno da busca considerando
+	a matriz tabela e não a planilha
+
+	Intervalo: Argumento opcional que indica se a busca será por exatidão ou aproximada
+
+	(*) A tabela deverá estar classificada em ordem crescente / decrescente pela coluna do valor procurado
+	no caso de uma busca por intervalo
+	
+Tratando mensagens de retorno de erro
+
+	SEERRO(Cálculo;Tratamento) <<>> IFERROR(Cálculo;Tratamento)
+
+Tabela de Dados
+
+	Recurso que permite mapear uma área de dados dentro de uma planilha que fornece diversos recursos
+	facilitadores de trabalho
+
+	Cálculos dentro de tabelas de dados
+
+	[Campo] - Representa a coluna da tabela que será utilizada na fórmula
+
+	@ - Executar um cálculo somente na linha atual
+
+Função Lógica SE (IF)
+
+	SE(TesteLógico;Verdadeiro;Falso)
+
+	Podemos encadear mais de uma função lógica em caso de mais de duas possibilidades
+
+	SE(TesteLógico;Verdadeiro;SE(TesteLógico2;Verdadeiro;Falso))
+
+	(*) Limite de no máximo 64 encadeamentos (Excel 2007 em diante)
+
+Gráfico
+
+	Recurso ideal para se mostrar dados resumidos de forma mais clara
+
+	Gráfico Combinado: ideal para se analisar previsto x realizado
+
+Tabela Dinâmica
+
+	Recurso que permite análises resumidas dos dados
+
+	Possui quatro áreas de posicionamento de campos, embora nenhuma seja obrigatória deve-se informar
+	algum campo em valores (values) para se realizar algum tipo de análise.
+
+Macro
+
+	Recurso que permite automatizar tarefas / rotinas repetitivas tornando nosso trabalho mais produtivo
+	
+	Nome de Macro:
+
+		. Não começar por números
+		. Não conter caracteres especiais exceto o underline "_"
+		. Não conter espaços em branco
+
+
